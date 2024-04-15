@@ -8,5 +8,9 @@
   },
   "keywords": [],
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "@npmcli/config": "^8.2.2",
+    "jest": "^29.7.0"
+  }
 }
