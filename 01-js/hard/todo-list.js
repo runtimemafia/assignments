@@ -11,6 +11,38 @@
 */
 
 class Todo {
+  
+  constructor(){
+    this.todos = [];
+  }
+
+  add(string){
+    this.todos.push(string);
+  }
+
+  remove(index){
+    this.todos.splice(index, 1)
+  }
+
+  update(index, str){
+    if(typeof(index) === Number){
+      this.todos[index] = str;
+    }
+    console.log(this.todos);
+  }
+
+  getAll(){
+    return this.todos;
+  }
+
+  get(index){
+    return this.todos[index] ? this.todos[index] : null;
+  }
+
+  clear(){
+    this.todos = [];
+  }
+
 
 }
 
