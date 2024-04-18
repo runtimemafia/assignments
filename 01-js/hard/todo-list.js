@@ -24,11 +24,10 @@ class Todo {
     this.todos.splice(index, 1)
   }
 
-  update(index, str){
-    if(typeof(index) === Number){
-      this.todos[index] = str;
+  update(index, string){
+    if(typeof(index) === "number" && index < this.todos.length){
+      this.todos[index] = string;
     }
-    console.log(this.todos);
   }
 
   getAll(){
